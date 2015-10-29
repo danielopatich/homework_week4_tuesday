@@ -15,7 +15,7 @@
 
 */
 .octicon, .mega-octicon {
-  font: normal normal normal 16px/1 octicons;
+  font: normal normal normal 18px/1 octicons;
   display: block;
   text-decoration: none;
   text-rendering: auto;
@@ -25,6 +25,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin: 0 5px;
 }
 .mega-octicon { font-size: 32px; }
 

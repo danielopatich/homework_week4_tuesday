@@ -1,16 +1,22 @@
+$.ajaxSetup({
+  headers: {
+    "Authorization": "token " + token
+  }
+});
+
+
 var url = 'https://api.github.com/users/danielopatich/repos';
+var repoFeed = $('.repoLog');
 
 $.getJSON('https://api.github.com/users/danielopatich/repos').done(function(data){
- console.log(data);
-
  var displayRepos = function(repos) {
    repos.forEach(function(repo) {
      console.log(repo);
-     var repoFeed = $('.repoLog');
-     var title = $('<section class="repoLog"> ' + '<a class="repoUrl"> ' +
-        repo.name + '</a> ' + '<div class= "repoRef"> ' + '</div> ' + '</section>');
-     repoFeed.append(repo.name);
+     var repo = $('<section class="repo"></section>');
+     var name = $('<a class="name" href="'+ repo.html_url +'">' + repo.name + '</a>');
 
+     repo.append(name);
+     repoFeed.append(repo);
    });
  }
  displayRepos(data);

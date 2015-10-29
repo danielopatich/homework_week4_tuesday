@@ -11,7 +11,8 @@ html {
 
 * {
   box-sizing: border-box;
-  font-family: 'myriad'; }
+  font-family: 'myriad';
+  font-family: Helvetica; }
 
 #wrapper {
   padding-top: 20px;
@@ -51,13 +52,15 @@ header {
 .headerNavMiddle, .topSearch {
   position: relative;
   margin: 0;
-  float: left; }
+  float: left;
+  text-decoration: none; }
 
 .headerNavRight {
   position: relative;
   margin: 0;
   float: right;
-  display: -webkit-inline-box; }
+  display: -webkit-inline-box;
+  text-decoration: none; }
 
 .profileBio {
   padding: 0;
@@ -91,3 +94,12 @@ nav.tabsNav {
   width: 40.29137%; }
   .repoLog:last-child {
     margin-right: 0; }
+
+a.repo {
+  padding: 10px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black; }
+
+a.cont, a.public {
+  padding: 10px; }
