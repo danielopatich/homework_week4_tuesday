@@ -4,30 +4,31 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" media="screen">
     <link rel="stylesheet" href="styles/main.css" media="screen">
+    <link rel="stylesheet" href="styles/octicons/octicons.css" media="screen" title="no title" charset="utf-8">
     <title></title>
   </head>
   <body>
     <header>
       <nav>
         <span class="octicon octicon-mark-github"></span>
-        <input type="text" name="name" value="">
+        <input class="topSearch" type="text" name="name" value="">
         <ul class="headerNavMiddle">
           <a href="#">Pull Requests</a>
           <a href="#">Issues</a>
           <a href="#">Gist</a>
         </ul>
         <ul class="headerNavRight">
-          <a href="#">Bell</a>
-          <a href="#">+</a>
-          <a href="#">Me</a>
+          <a href="#" class="octicon octicon-bell"></a>
+          <a href="#" class="octicon octicon-plus"></a>
+          <a href="#" class=""><img src="https://avatars3.githubusercontent.com/u/14968390?v=3&s=40" height="20px" alt="" /></a>
         </ul>
       </nav>
     </header>
 <!-- // end of header // -->
     <main>
       <div id="wrapper">
-        <div class="container">
-          <div class="leftColumn">
+        <section class="content-container">
+          <div id="leftColumn">
             <a href="#">
               <img height="230" width="230 "src="https://avatars1.githubusercontent.com/u/14968390?v=3&s=460" alt="" />
             </a>
@@ -36,11 +37,11 @@
               <span class="nameGH">danielopatich</span>
             </h1>
             <ul class="profileBio">
-              <li>TIY</li>
-              <li>Nashville</li>
-              <li>daniel.opatich@gmail.com</li>
-              <li>medium</li>
-              <li>Joined</li>
+              <li class="octicon octicon-organization">TIY</li>
+              <li class="octicon octicon-location">Nashville</li>
+              <li class="octicon octicon-mail">daniel.opatich@gmail.com</li>
+              <li class="octicon octicon-link">medium</li>
+              <li class="octicon octicon-clock">Joined</li>
             </ul>
             <div class="followStats">
               <strong class="followers">0</strong>
@@ -55,20 +56,60 @@
               <a href="#">gh</a>
             </div>
           </div>
-
-
-
-
-
-
-
-
-
+        </section>
+  <!-- // left column end // -->
+        <section id="mainColumn">
+          <div class="tabs">
+            <a href="#" class="octicon octicon-pencil">Edit Profile</a>
+            <nav class="tabsNav">
+              <a href="#" class="octicon octicon-diff-added">Contributions</a>
+              <a href="#" class="octicon octicon-repo">Repositories</a>
+              <a href="#" class="octicon octicon-rss">Public Activity</a>
+            </nav>
+          </div>
+          <div class="tabsContent">
+            <section class="repos">
+              <div class="repoFilter">
+                <ul class="filterOptions">
+                  <li>
+                    <a href="#">All</a>
+                  </li>
+                  <li>
+                    <a href="#">Public</a>
+                  </li>
+                  <li>
+                    <a href="#">Private</a>
+                  </li>
+                  <li>
+                    <a href="#">Sources</a>
+                  </li>
+                  <li>
+                    <a href="#">Forks</a>
+                  </li>
+                  <li>
+                    <a href="#">Mirrors</a>
+                  </li>
+                </ul>
+              <a href="#" class="octicon octicon-repo">New</a>
+                <form class="repoSearch" action="index.html" method="post">
+                  <input type="text" name="name" value="">
+                  <input type="submit" name="name" value="">
+                </form>
+              </div>
+            <section class="repoLog">
+              <a class="repoUrl" href=""></a>
+                <br>
+              <div class="repoRef"></div>
+                <br>
+            </section>
+          </section>
         </div>
+
+   <!-- // main column end // -->
       </div>
     </main>
-    <script src="token.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="token.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

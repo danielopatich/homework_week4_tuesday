@@ -1,5 +1,5 @@
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
-$visual-grid: true;
+// $visual-grid: true;
 @import "../bower_components/neat/app/assets/stylesheets/neat";
 
 
@@ -83,5 +83,6 @@ nav.tabsNav {
 }
 
 .repoLog {
-  display: table-caption;
+  display: block;
+  @include span-columns(5);
 }
