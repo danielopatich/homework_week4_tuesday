@@ -27,7 +27,7 @@
   user-select: none;
   margin: 0 5px;
 }
-.mega-octicon { font-size: 32px; }
+.mega-octicon { font-size: 24px; }
 
 .octicon-alert:before { content: '\f02d'} /*  */
 .octicon-arrow-down:before { content: '\f03f'} /*  */

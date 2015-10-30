@@ -29,16 +29,22 @@ html {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%; }
+  width: 23.23176%;
+  width: 260px;
+  margin-top: -3px; }
   #leftColumn:last-child {
     margin-right: 0; }
+
+#leftColumn:last-child {
+  margin-right: 20px; }
 
 #mainColumn {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%;
-  margin-right: 0; }
+  margin-right: 0;
+  width: 800px; }
   #mainColumn:last-child {
     margin-right: 0; }
 
@@ -52,8 +58,22 @@ header {
 .headerNavMiddle, .topSearch {
   position: relative;
   margin: 0;
-  float: left;
-  text-decoration: none; }
+  float: left; }
+  .headerNavMiddle a, .topSearch a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #333333;
+    font-weight: bold;
+    font-size: 14px; }
+
+.topSearch {
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  height: 28px;
+  width: 400px;
+  margin: -3px 0 0 10px;
+  padding: 10px;
+  font-size: 15px; }
 
 .headerNavRight {
   position: relative;
@@ -61,45 +81,140 @@ header {
   float: right;
   display: -webkit-inline-box;
   text-decoration: none; }
+  .headerNavRight a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #333333;
+    font-weight: bold;
+    font-size: 16px; }
 
 .profileBio {
   padding: 0;
   display: block;
   float: left; }
+  .profileBio li {
+    font-size: 14px;
+    color: #333333;
+    overflow: auto; }
 
-.tabs a {
-  float: right; }
+.avatar img {
+  border-radius: 8px; }
+
+.repoTabs {
+  border-bottom: 1px solid #E2E2E2; }
+  .repoTabs a {
+    float: right;
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    margin: 5px 5px 0px 10px; }
 
 nav.tabsNav {
   float: left;
-  height: 20px; }
+  height: 35px; }
 
-.repoFilter, .filterOptions {
+.repoFilter {
+  height: 100px;
+  border-bottom: 1px solid #E2E2E2; }
+
+.filterOptions {
   display: -webkit-inline-box;
-  margin: 10px;
-  padding: 10px;
-  list-style: none; }
-  .repoFilter a, .filterOptions a {
+  list-style: none;
+  margin: 30px 0px 0px 0px;
+  padding: 0px; }
+  .filterOptions a {
+    margin: 0 0 0 0;
     float: right;
-    margin: 0 11px; }
+    text-decoration: none;
+    color: #4078C0; }
+
+li {
+  padding: 6.5px; }
+
+.new {
+  float: right;
+  padding: 34px 10px 0px 0px; }
 
 .repoSearch {
-  float: left; }
+  float: left;
+  padding: 10px 10px 0px 0px;
+  margin: 20px 0 0 0; }
 
 .repoLog {
   display: block;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 40.29137%; }
+  width: 100%; }
   .repoLog:last-child {
     margin-right: 0; }
 
 a.repo {
   padding: 10px;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black; }
+  border-top: 1px solid #E2E2E2;
+  border-left: 1px solid #E2E2E2;
+  border-right: 1px solid #E2E2E2;
+  border-bottom: none;
+  color: #333333;
+  font-size: 16px;
+  border-radius: 3px; }
 
 a.cont, a.public {
-  padding: 10px; }
+  padding: 10px;
+  color: #333333;
+  font-size: 16px; }
+
+section.repo {
+  display: block;
+  margin: 20px 0px 0px 0px;
+  padding: 20px 0px 60px 0;
+  border-bottom: 1px solid #E2E2E2;
+  border-radius: 3px; }
+
+a.name {
+  text-decoration: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-family: Helvetica;
+  color: #4078C0;
+  font-size: 20px;
+  font-weight: bold; }
+
+.followStats {
+  border-top: 1px solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
+  border-radius: 3px; }
+  .followStats strong {
+    color: #333333;
+    font-size: 12px; }
+
+input {
+  cursor: pointer; }
+
+.followers, .starred, .following {
+  color: #333333;
+  font-size: 12px; }
+
+.submitBtn {
+  background-color: #eee;
+  padding: 5px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px; }
+
+a.new {
+  padding: 5px 10px;
+  margin: 28px 5px 0 0px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #61B146; }
+
+.editBtn {
+  background-color: #eee;
+  padding: 5px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px; }
+
+.findRepo {
+  border: 1px solid #d5d5d5;
+  border-radius: 3px; }

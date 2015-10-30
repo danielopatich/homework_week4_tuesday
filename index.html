@@ -10,8 +10,8 @@
   <body>
     <header>
       <nav>
-        <span class="octicon octicon-mark-github"></span>
-        <input class="topSearch" type="text" name="name" value="">
+        <span class="mega-octicon octicon-mark-github"></span>
+        <input class="topSearch" type="text" name="name" value="" placeholder="Search GitHub">
         <ul class="headerNavMiddle">
           <a href="#">Pull Requests</a>
           <a href="#">Issues</a>
@@ -29,7 +29,7 @@
       <div id="wrapper">
         <section class="content-container">
           <div id="leftColumn">
-            <a href="#">
+            <a href="#" class="avatar">
               <img height="230" width="230 "src="https://avatars1.githubusercontent.com/u/14968390?v=3&s=460" alt="" />
             </a>
             <h1>
@@ -59,8 +59,8 @@
         </section>
   <!-- // left column end // -->
         <section id="mainColumn">
-          <div class="tabs">
-            <a href="#" class="octicon octicon-pencil">Edit Profile</a>
+          <div class="repoTabs">
+            <a href="#" class="editBtn octicon octicon-pencil">Edit Profile</a>
             <nav class="tabsNav">
               <a href="#" class="cont octicon octicon-diff-added">Contributions</a>
               <a href="#" class="repo octicon octicon-repo">Repositories</a>
@@ -90,11 +90,11 @@
                     <a href="#">Mirrors</a>
                   </li>
                 </ul>
-              <a href="#" class="octicon octicon-repo">New</a>
-                <form class="repoSearch" action="index.html" method="post">
-                  <input type="text" name="name" value="">
-                  <input type="submit" name="name" value="Search">
-                </form>
+                <a href="#" class="new octicon octicon-repo">New</a>
+                  <form class="repoSearch" action="index.html" method="post">
+                    <input class="findRepo" type="text" name="name" value="" placeholder="Find a repository...">
+                    <input type="submit" name="name" value="Search" class="submitBtn">
+                  </form>
               </div>
             <section class="repoLog">
             </section>

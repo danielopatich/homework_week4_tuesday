@@ -21,3 +21,9 @@ $.getJSON('https://api.github.com/users/danielopatich/repos').done(function(data
  }
  displayRepos(data);
 });
+
+
+
+
+//
+// forEach(function (arr, index, array)
