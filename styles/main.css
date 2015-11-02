@@ -195,6 +195,18 @@ input {
   color: #333333;
   font-size: 12px; }
 
+.profileStuff {
+  display: block;
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+  font-family: Helvetica;
+  font-size: 12px; }
+  .profileStuff h2 {
+    position: relative; }
+
+.profileBio {
+  border-bottom: 1px solid #d5d5d5; }
+
 .submitBtn {
   background-color: #eee;
   padding: 5px 10px;
